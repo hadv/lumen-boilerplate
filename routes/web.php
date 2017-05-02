@@ -18,3 +18,5 @@ $app->get('/', function () use ($app) {
 $app->get('/hello/{name}', function($name) use ($app) {
     return "Hello {$name}";
 });
+
+$app->get('/books', 'BooksController@index');

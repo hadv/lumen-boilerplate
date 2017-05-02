@@ -25,7 +25,7 @@ $app = new Laravel\Lumen\Application(
 
 $app->withFacades();
 
-// $app->withEloquent();
+$app->withEloquent();
 
 /*
 |--------------------------------------------------------------------------
@@ -67,9 +67,9 @@ $app->middleware([
     App\Http\Middleware\RequestLogMiddleware::class
 ]);
 
-// $app->routeMiddleware([
-//     'auth' => App\Http\Middleware\Authenticate::class,
-// ]);
+//$app->routeMiddleware([
+//    'auth' => App\Http\Middleware\Authenticate::class,
+//]);
 
 /*
 |--------------------------------------------------------------------------
