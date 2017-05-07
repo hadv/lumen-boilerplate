@@ -20,3 +20,5 @@ $app->get('/hello/{name}', function($name) use ($app) {
 });
 
 $app->get('/books', 'BooksController@index');
+
+$app->get('/books/{id}', 'BooksController@show');
