@@ -11,7 +11,7 @@ namespace App\Repositories;
 
 use Illuminate\Support\Facades\DB;
 
-class BookRepositoryImpl implements BookRepositoryInterface
+class BookRepositoryImpl extends BaseRepositoryImpl implements BookRepositoryInterface
 {
 
     /**
