@@ -1,14 +1,11 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: hadv
- * Date: 5/8/17
- * Time: 12:31 AM
- */
 
 namespace App\Repositories;
 
-
+/**
+ * Interface BaseRepositoryInterface
+ * @package App\Repositories
+ */
 interface BaseRepositoryInterface
 {
     /**

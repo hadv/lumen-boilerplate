@@ -1,12 +1,14 @@
 <?php
 namespace App\Services;
+
 /**
- * Created by PhpStorm.
- * User: hadv
- * Date: 5/7/17
- * Time: 11:54 PM
+ * Interface BookServiceInterface
+ * @package App\Services
  */
 interface BookServiceInterface extends BaseServiceInterface
 {
+    /**
+     * @return mixed
+     */
     public function getAllBooks();
 }

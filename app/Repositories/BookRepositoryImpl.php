@@ -1,21 +1,18 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: hadv
- * Date: 5/8/17
- * Time: 12:37 AM
- */
 
 namespace App\Repositories;
 
-
 use Illuminate\Support\Facades\DB;
 
+/**
+ * Class BookRepositoryImpl
+ * @package App\Repositories
+ */
 class BookRepositoryImpl extends BaseRepositoryImpl implements BookRepositoryInterface
 {
 
     /**
-     * Get All Models.
+     * Get All Books.
      *
      * @param string $order
      * @param string $direction

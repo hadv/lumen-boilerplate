@@ -10,7 +10,6 @@ namespace App\Services\Production;
 
 use App\Repositories\BookRepositoryInterface;
 use App\Services\BookServiceInterface;
-use Illuminate\Support\Facades\DB;
 
 class BookService extends BaseService implements BookServiceInterface
 {

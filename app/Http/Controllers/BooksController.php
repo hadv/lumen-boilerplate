@@ -10,6 +10,7 @@ class BooksController {
 
     /** @var  \App\Services\BookServiceInterface BookService */
     protected $bookService;
+
     /**
      * BooksController constructor.
      *
