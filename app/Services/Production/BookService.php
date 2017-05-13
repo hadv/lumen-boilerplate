@@ -3,7 +3,7 @@
  * Created by PhpStorm.
  * User: hadv
  * Date: 5/8/17
- * Time: 12:05 AM
+ * Time: 12:05 AM.
  */
 
 namespace App\Services\Production;
@@ -26,6 +26,7 @@ class BookService extends BaseService implements BookServiceInterface
     public function getAllBooks()
     {
         $books = $this->bookRepository->all();
+
         return $books;
     }
 }

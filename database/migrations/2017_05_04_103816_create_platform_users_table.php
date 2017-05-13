@@ -23,7 +23,7 @@ class CreatePlatformUsersTable extends Migration
             $table->string('email_address', 255)->nullable();
             $table->unique('email_address', 'email_address_unique_idx');
             $table->string('facebook_id', 100)->nullable();
-            $table->char("gender", 1)->nullable();
+            $table->char('gender', 1)->nullable();
             $table->dateTime('created_at')->nullable();
             $table->string('created_by', 100)->nullable();
             $table->dateTime('updated_at')->nullable();

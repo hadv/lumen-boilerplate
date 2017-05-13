@@ -7,11 +7,12 @@ use Illuminate\Database\Seeder;
  * Created by PhpStorm.
  * User: hadv
  * Date: 5/3/17
- * Time: 1:54 AM
+ * Time: 1:54 AM.
  */
 class BooksTableSeeder extends Seeder
 {
-    public function run() {
+    public function run()
+    {
         DB::table('books')->insert([
             'title' => 'War of the Worlds',
             'description' => 'A science fiction masterpiece about Martians invading London',
@@ -26,7 +27,7 @@ class BooksTableSeeder extends Seeder
                 gone missing after working on a mysterious project called a tesseract.',
             'author' => 'Madeleine L\'Engle',
             'created_at' => Carbon::now(),
-            'updated_at' => Carbon::now()
+            'updated_at' => Carbon::now(),
         ]);
     }
 }

@@ -20,18 +20,20 @@ class BooksControllerTest extends TestCase
         );
     }
 
-    public function testStatusCodeShouldBe200() {
+    public function testStatusCodeShouldBe200()
+    {
         $this->get('/books')->seeStatusCode(200);
     }
 
-    public function testShouldReturnCollectionOfRecords() {
+    public function testShouldReturnCollectionOfRecords()
+    {
         $this
             ->get('/books')
             ->seeJson([
-                'title' => 'War of the Worlds'
+                'title' => 'War of the Worlds',
             ])
             ->seeJson(([
-                'title' => 'A Wrinkle in Time'
+                'title' => 'A Wrinkle in Time',
             ]));
     }
 }

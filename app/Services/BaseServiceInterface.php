@@ -3,10 +3,8 @@
 namespace App\Services;
 
 /**
- * Interface BaseServiceInterface
- * @package App\Services
+ * Interface BaseServiceInterface.
  */
 interface BaseServiceInterface
 {
-
 }

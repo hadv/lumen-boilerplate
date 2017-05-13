@@ -21,7 +21,7 @@ class CreateUsersTable extends Migration
             $table->integer('user_type')->default(1);
             $table->string('guest_id', 50)->nullable();
             $table->string('nick_name', 255)->nullable();
-            $table->integer("nick_name_tag")->nullable();
+            $table->integer('nick_name_tag')->nullable();
             $table->dateTime('created_at')->nullable();
             $table->string('created_by', 100)->nullable();
             $table->dateTime('updated_at')->nullable();

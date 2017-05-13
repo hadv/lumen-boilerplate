@@ -5,10 +5,8 @@ namespace App\Services\Production;
 use App\Services\BaseServiceInterface;
 
 /**
- * Class BaseService
- * @package App\Services\Production
+ * Class BaseService.
  */
 class BaseService implements BaseServiceInterface
 {
-
 }

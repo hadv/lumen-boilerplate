@@ -3,8 +3,7 @@
 namespace App\Repositories;
 
 /**
- * Interface BaseRepositoryInterface
- * @package App\Repositories
+ * Interface BaseRepositoryInterface.
  */
 interface BaseRepositoryInterface
 {

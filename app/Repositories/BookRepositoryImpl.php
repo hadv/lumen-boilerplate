@@ -5,12 +5,10 @@ namespace App\Repositories;
 use Illuminate\Support\Facades\DB;
 
 /**
- * Class BookRepositoryImpl
- * @package App\Repositories
+ * Class BookRepositoryImpl.
  */
 class BookRepositoryImpl extends BaseRepositoryImpl implements BookRepositoryInterface
 {
-
     /**
      * Get All Books.
      *

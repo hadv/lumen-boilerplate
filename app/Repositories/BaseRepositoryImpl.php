@@ -3,10 +3,8 @@
 namespace App\Repositories;
 
 /**
- * Class BaseRepositoryImpl
- * @package App\Repositories
+ * Class BaseRepositoryImpl.
  */
 abstract class BaseRepositoryImpl implements BaseRepositoryInterface
 {
-
 }

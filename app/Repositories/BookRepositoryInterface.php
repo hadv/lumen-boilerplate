@@ -3,8 +3,7 @@
 namespace App\Repositories;
 
 /**
- * Interface BookRepositoryInterface
- * @package App\Repositories
+ * Interface BookRepositoryInterface.
  */
 interface BookRepositoryInterface extends BaseRepositoryInterface
 {
