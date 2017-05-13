@@ -21,4 +21,7 @@ $app->get('/hello/{name}', function ($name) use ($app) {
 
 $app->get('/books', 'BooksController@index');
 
-$app->get('/books/{id}', 'BooksController@show');
+$app->get('/books/{id}', [
+    'middleware' => 'auth:api',
+    'uses' => 'BooksController@show',
+]);
