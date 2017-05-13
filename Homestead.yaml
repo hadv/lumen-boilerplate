@@ -1,0 +1,19 @@
+ip: 192.168.10.10
+memory: 2048
+cpus: 1
+provider: virtualbox
+authorize: ~/.ssh/id_rsa.pub
+keys:
+    - ~/.ssh/id_rsa
+folders:
+    -
+        map: /Users/hadv/lumen-boilerplate
+        to: /home/vagrant/Code/lumen-boilerplate
+sites:
+    -
+        map: lumen-boilerplate.app
+        to: /home/vagrant/Code/lumen-boilerplate/public
+databases:
+    - homestead
+name: lumen-boilerplate
+hostname: lumen-boilerplate
