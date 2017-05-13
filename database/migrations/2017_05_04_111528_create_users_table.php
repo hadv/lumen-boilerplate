@@ -15,20 +15,11 @@ class CreateUsersTable extends Migration
     {
         Schema::create('users', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('email_address', 255)->nullable();
+            $table->string('name', 20)->nullable();
+            $table->string('api_token', 20)->nullable();
+            $table->string('email', 255)->nullable();
             $table->string('password', 255)->nullable();
-            $table->string('salt', 10)->nullable();
-            $table->integer('user_type')->default(1);
-            $table->string('guest_id', 50)->nullable();
-            $table->string('nick_name', 255)->nullable();
-            $table->integer('nick_name_tag')->nullable();
-            $table->dateTime('created_at')->nullable();
-            $table->string('created_by', 100)->nullable();
-            $table->dateTime('updated_at')->nullable();
-            $table->string('updated_by', 100)->nullable();
-            $table->unique('email_address');
-            $table->unique('guest_id');
-            $table->index('nick_name', 'nick_name_idx');
+            $table->unique('email');
         });
     }
 
